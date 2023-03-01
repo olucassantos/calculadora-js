@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <script src="jquery-3.6.3.min.js"></script>
+
+        <style>
+            body{
+                background-color: #f1f1f1;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .calculadora{
+                margin: 0 auto;
+                min-width: 300px;
+                width: 30%;
+                background-color: #f1f12c;
+                border: 1px solid #4f5201;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .calculadora h1{
+                text-align: center;
+                color: #4f5201;
+                margin: 0 10px 10px 10px;
+                font-size: 2em;
+            }
+
+            .visor{
+                width: 100%;
+                height: 50px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .visor input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: transparent;
+                text-align: right;
+                font-size: 20px;
+                padding: 0 10px 0 10px;
+            }
+
+            .botoes{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .botoes .botao{
+                width: 30%;
+                height: 50px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin: 5px;
+                font-size: 20px;
+            }
+
+            .botoes.funcoes .botao{
+                width: 20%;
+                height: 50px;
+                background-color: #80e00b;
+                border: 1px solid #013701;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+
+            .botao:hover{
+                background-color: #e0e0e0 !important;
+            }
+
+            .botao:active{
+                background-color: #ccc !important;
+            }
+
+            #btn_igual{
+                width: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+
+            <div class="visor">
+                <input type="text" id="visor">
+            </div>
+
+            <div class="botoes">
+                <button class="botao" id="btn_7">7</button>
+                <button class="botao" id="btn_8">8</button>
+                <button class="botao" id="btn_9">9</button>
+                <button class="botao" id="btn_4">4</button>
+                <button class="botao" id="btn_5">5</button>
+                <button class="botao" id="btn_6">6</button>
+                <button class="botao" id="btn_1">1</button>
+                <button class="botao" id="btn_2">2</button>
+                <button class="botao" id="btn_3">3</button>
+                <button class="botao" id="btn_C">C</button>
+                <button class="botao" id="btn_0">0</button>
+                <button class="botao" id="btn_C">CE</button>
+            </div>
+
+            <div class="botoes funcoes">
+                <button class="botao" id="btn_soma">+</button>
+                <button class="botao" id="btn_sub">-</button>
+                <button class="botao" id="btn_mult">*</button>
+                <button class="botao" id="btn_div">/</button>
+                <button class="botao" id="btn_igual">=</button>
+            </div>
+        </div>
+    </body>
+</html>
